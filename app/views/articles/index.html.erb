@@ -1,0 +1,6 @@
+<% @articles.reverse.each do |article| %>
+  <div>
+    <h2><%= link_to article.title.capitalize, article_path(article) %></h2>
+    <p><%= article.content %></p>
+  </div>
+<% end %>
